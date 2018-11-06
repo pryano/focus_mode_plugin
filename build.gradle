@@ -1,0 +1,15 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.3.12'
+}
+
+group 'focusmode'
+version '0.0.1'
+
+intellij {
+    version = '182.4505.22'
+    alternativeIdePath = "C:\\Users\\ryan.osborne\\AppData\\Local\\JetBrains\\Toolbox\\apps\\PyCharm-P\\ch-0\\182.4505.26"
+}
+
+patchPluginXml {
+    changeNotes """### Updating plugin configuration to work in pycharm."""
+}
