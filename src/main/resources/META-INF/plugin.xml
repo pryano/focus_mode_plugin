@@ -1,0 +1,21 @@
+<idea-plugin>
+    <version>0.0.1</version>
+    <change-notes>Initial Build</change-notes>
+    <idea-version since-build="182.4505" until-build="182.*"/>
+    <id>focusmode.focusmode</id>
+    <name>Focus Mode</name>
+    <vendor email="visitor.ryan@gmail.com">pryano</vendor>
+    <description>
+        Reduce visibility of all but the current method/class.
+    </description>
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true">com.intellij.modules.python</depends>
+    <depends optional="true">com.intellij.modules.java</depends>
+    <extensions defaultExtensionNs="com.intellij"/>
+    <actions>
+        <action id="FocusModeToggleAction" class="FocusModeToggleAction" text="Enter Focus Mode" description="Toggle Focus Mode">
+            <add-to-group group-id="ViewMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift F"/>
+        </action>
+    </actions>
+</idea-plugin>
